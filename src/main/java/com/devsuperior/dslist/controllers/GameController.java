@@ -27,7 +27,7 @@ public class GameController {
 		GameDTO result = gameService.findById(id);
 		return result;
 	}
-
+	
 	@GetMapping
 	@ResponseStatus(code = HttpStatus.OK)
 	public List<GameMinDTO> findAll() {
